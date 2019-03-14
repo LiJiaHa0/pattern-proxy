@@ -15,7 +15,7 @@ public class JDKSchoolmateTest {
         //代理人跟我绑定，相当于这个代理是我叫的，你现在只能帮我买
         Schoolmate schoolmate = (Schoolmate)jdkSchoolmate.bind(new Myself());
         //让代理帮我去买饭
-        schoolmate.washClothes();
+        schoolmate.buyFood();
 
     }
 }

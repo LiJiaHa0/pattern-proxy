@@ -10,10 +10,9 @@ import com.ljh.study.proxy.Myself;
 public class CglibSchoolmateTest {
 
     public static void main(String[] args) {
-//        CglibSchoolmate cglibSchoolmate = new CglibSchoolmate();
+        //通过我们的代理类getInstance方法生成我们代理类对象，然后我们强转为我自己，实际这个Myself类为cglib为我们自动生成的
         Myself myself = (Myself)new CglibSchoolmate().getInstance(Myself.class);
-//        Object instance = cglibSchoolmate.getInstance(Myself.class);
-//        Myself myself = (Myself)instance;
+        //通过调用buyFood方法实现我们代理类的中方法，
         myself.buyFood();
     }
 }
